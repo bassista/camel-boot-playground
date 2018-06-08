@@ -1,0 +1,18 @@
+
+debug: false
+
+logging:
+  level:
+    org.apache.camel: INFO
+    org.apache.camel.cloud: DEBUG
+
+camel:
+  springboot:
+    main-run-controller: true
+    name: CamelBoot
+  cloud:
+    dns:
+      service-discovery:
+        enabled: true
+        domain: google.com
+        proto: _tcp
