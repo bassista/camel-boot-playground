@@ -1,4 +1,4 @@
-package com.github.lburgazzoli;
+package com.github.lburgazzoli.client;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +16,8 @@ public class Application {
         @Override
         public void configure() {
             from("timer:start?period=1s")
-                .serviceCall("_xmpp-server");
+                .serviceCall("camel-boot-service")
+                .log("Got ${body}");
         }
     }
 }

@@ -5,14 +5,17 @@ logging:
   level:
     org.apache.camel: INFO
     org.apache.camel.cloud: DEBUG
+    org.apache.camel.component.kubernetes: DEBUG
 
 camel:
   springboot:
     main-run-controller: true
     name: CamelBoot
   cloud:
-    dns:
+    kubernetes:
       service-discovery:
         enabled: true
-        domain: google.com
-        proto: _tcp
+        lookup: dnssrv
+        dns-domain: cluster.local
+        port-name: http
+        port-protocol: tcp

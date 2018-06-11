@@ -1,0 +1,8 @@
+debug: false
+
+spring:
+  application:
+    name: CamelBootService
+
+server:
+  port: 8080

@@ -22,6 +22,7 @@ atlassian-ide-plugin.xml
 .idea/
 .gradle/
 .vscode/
+.sts4-cache/
 classes/
 build/
 build-gradle/
@@ -30,3 +31,4 @@ logs/
 target/
 data/
 out/
+log-camel-lsp.out
