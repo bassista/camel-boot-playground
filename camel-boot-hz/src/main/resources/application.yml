@@ -1,0 +1,13 @@
+
+debug: false
+
+logging:
+  level:
+    org.apache.camel: INFO
+    org.apache.camel.cloud: DEBUG
+    org.apache.camel.component.kubernetes: DEBUG
+
+camel:
+  springboot:
+    main-run-controller: true
+    name: CamelBoot

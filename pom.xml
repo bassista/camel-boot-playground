@@ -12,13 +12,14 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring.boot-version>2.0.2.RELEASE</spring.boot-version>
-    <camel.version>2.22.0-SNAPSHOT</camel.version>
+    <spring.boot-version>1.5.14.RELEASE</spring.boot-version>
+    <camel.version>2.21.1</camel.version>
   </properties>
 
   <modules>
     <module>camel-boot-service</module>
     <module>camel-boot-client</module>
+    <module>camel-boot-hz</module>
   </modules>
 
   <dependencyManagement>
